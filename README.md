@@ -1,5 +1,5 @@
 # AVLTreeMaven
 
-[![codecov](https://codecov.io/gh/mahitha-reddy/AVLTreeMaven/branch/master/graph/badge.svg?token=TXZOJPBR9L)](https://codecov.io/gh/mahitha-reddy/AVLTreeMaven)
+[![codecov.io Code Coverage](https://img.shields.io/codecov/c/github/dwyl/hapi-auth-jwt2.svg?maxAge=2592000)]
 
 ![Travis (.com)](https://img.shields.io/travis/com/mahitha-reddy/AVLTreeMaven)
