@@ -1,18 +1,11 @@
-- name: Codecov
-  uses: codecov/codecov-action@v3.0.0
-
-arch: amd64
-
 language: java
 
-jdk: 
-  - oraclejdk15
+# Cobertura is not supported in JDK11 so you must downgrade the JDK that Travis uses if you want to use Cobertura with Travis.
+# See https://github.com/cobertura/cobertura/issues/381
+jdk:
+  - openjdk8
 
-cache:
-  directories:
-  - $HOME/.m2
+script: "mvn cobertura:cobertura"
 
-script:
-  - java --version
-  - ./mvnw clean install
-  - ./mvnw test
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
